@@ -59,7 +59,14 @@
 	  }
 
 	  $('.wrapper').mousemove(function(e){
-	  	$('.big-cursor').css('left', e.clientX - 70).css('top', e.clientY + 15);
+	  	if(desktop == true){
+	  		$('.big-cursor').css('left', e.clientX - 70).css('top', e.clientY + 15);
+	  	}
+
+	  	else{
+	  		$('.big-cursor').hide();
+	  	}
+	  	
 	  });
 
 
